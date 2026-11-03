@@ -1,0 +1,23 @@
+format = "$username$hostname $directory $character"
+add_newline = false
+
+
+[username]
+show_always = true
+style_user = "green bold"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "blue bold"
+format = "@[$hostname]($style)"
+
+[directory]
+style = "cyan bold"
+truncation_length = 3
+format = "[$path]($style)"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
