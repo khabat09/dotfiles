@@ -22,7 +22,7 @@ alias mnt="mount -t ios . /mnt"
 alias nn=npm
 alias nom=npm
 alias p3="python3"
+alias gut="git"
 #devuan aliases
 alias apk="apt"
-alias add="install"
 
