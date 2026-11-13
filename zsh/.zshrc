@@ -1,4 +1,4 @@
-#run in bg
+#run in bg (iSH and iSH-AOK only)
 cat /dev/location > /dev/null &
 #yea hi
 export PATH="/root/.local/bin:/usr/local/bin:$PATH"
@@ -20,13 +20,10 @@ alias ls="ls -p --color=auto"
 alias la="ls -a"
 alias ll="ls -lah"
 alias mnt="mount -t ios . /mnt"
-alias nn=npm
-alias nom=npm
+alias nn="npm"
+alias nom="npm"
 alias p3="python3"
 alias gut="git"
-#devuan aliases
-alias apk="apt"
-
 
 #functions
 fastfetch() {

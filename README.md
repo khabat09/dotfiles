@@ -17,6 +17,7 @@ Install these packages first. The installer does not install them:
 - starship
 - zsh
 - fastfetch
+- mpg123
 
 ## Installation
 
