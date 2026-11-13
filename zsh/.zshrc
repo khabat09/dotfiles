@@ -16,8 +16,9 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 #aliases
+alias ls="ls -p --color=auto"
 alias la="ls -a"
-alias ll="ls -la"
+alias ll="ls -lah"
 alias mnt="mount -t ios . /mnt"
 alias nn=npm
 alias nom=npm
