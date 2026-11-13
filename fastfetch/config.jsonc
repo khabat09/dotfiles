@@ -17,11 +17,11 @@
       "outputColor": "bright_black"
     },
     "break",
-    { "type": "os",       "key": "\uf17c \u001b[32m➜\u001b[0m " },
-    { "type": "kernel",   "key": "\uf013 \u001b[32m➜\u001b[0m " },
-    { "type": "uptime",   "key": "\uf017 \u001b[32m➜\u001b[0m " },
-    { "type": "shell",    "key": "\uf120 \u001b[32m➜\u001b[0m " },
-    { "type": "terminal", "key": "\uf108 \u001b[32m➜\u001b[0m " },
+    { "type": "os",       "key": "\uf17c OS     \u001b[32m➜\u001b[0m " },
+    { "type": "kernel",   "key": "\uf013 Kernel \u001b[32m➜\u001b[0m " },
+    { "type": "uptime",   "key": "\uf017 Uptime \u001b[32m➜\u001b[0m " },
+    { "type": "shell",    "key": "\uf120 Shell  \u001b[32m➜\u001b[0m " },
+    { "type": "terminal", "key": "\uf108 Term   \u001b[32m➜\u001b[0m " },
     "break",
     {
       "type": "separator",
@@ -29,16 +29,16 @@
       "outputColor": "bright_black"
     },
     "break",
-    { "type": "cpu",    "key": "\uf2db \u001b[32m➜\u001b[0m " },
-    { "type": "gpu",    "key": "\uf26c \u001b[32m➜\u001b[0m ", "format": "{2}" },
-    { "type": "memory", "key": "\uf233 \u001b[32m➜\u001b[0m " },
-    { "type": "disk",   "key": "\uf0a0 \u001b[32m➜\u001b[0m " }
+    { "type": "cpu",    "key": "\uf2db CPU    \u001b[32m➜\u001b[0m " },
+    { "type": "gpu",    "key": "\uf26c GPU    \u001b[32m➜\u001b[0m ", "format": "{2}" },
+    { "type": "memory", "key": "\uf233 Memory \u001b[32m➜\u001b[0m " },
+    { "type": "disk",   "key": "\uf0a0 Disk   \u001b[32m➜\u001b[0m " }
   ],
   "display": {
     "separator": "",
     "color": {
       "keys": "cyan",
-      "title": "magenta"
+      "title": "red"
     }
   }
 }
