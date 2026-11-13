@@ -1,8 +1,7 @@
 #!/bin/bash
-ln -s -v -f ./zsh/.zshrc ~/.zshrc
-ln -s -v -f ./starship/starship.toml ~/.config/starship.toml
-ln -s -v -f ./fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-mkdir -p ~/Music
-mkdir -p ~/Images
-ln -s -v -f ./media/linus-f-nvidia.png ~/Images/linus-f-media.png
-ls -s -v -f ./media/fastfetch-audio.mp3 ~/Music/fastfetch-audio.mp3
+mkdir -p ~/.config/starship ~/.config/fastfetch ~/Music ~/Images
+ln -s -v -f ~/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s -v -f ~/dotfiles/starship/starship.toml ~/.config/starship.toml
+ln -s -v -f ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+ln -s -v -f ~/dotfiles/media/linus-f-nvidia.png ~/Images/linus-f-media.png
+ln -s -v -f ~/dotfiles/media/fastfetch-audio.mp3 ~/Music/fastfetch-audio.mp3
