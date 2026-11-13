@@ -4,12 +4,12 @@ add_newline = false
 
 [username]
 show_always = true
-style_user = "green bold"
+style_user = "purple bold"
 format = "[$user]($style)"
 
 [hostname]
 ssh_only = false
-style = "blue bold"
+style = "cyan bold"
 format = "@[$hostname]($style)"
 
 [directory]
