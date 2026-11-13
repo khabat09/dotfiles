@@ -9,37 +9,50 @@
   "modules": [
     {
       "type": "title",
-      "format": "{user-name-colored}@{host-name-colored}"
+      "format": "\u001b7\u001b[90m┌{$2}┐\u001b8\u001b[C\u001b[90m─ \u001b[1;31m{user-name}\u001b[90m@\u001b[1;36m{host-name}\u001b[90m "
+
     },
+    { "type": "os",       "key": "\u001b[90m│\u001b[36m \uf17c OS     \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}", "format": "{2}" },
+    { "type": "kernel",   "key": "\u001b[90m│\u001b[36m \uf013 Kernel \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}", "format": "{2}" },
+    { "type": "uptime",   "key": "\u001b[90m│\u001b[36m \uf017 Uptime \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
+    { "type": "shell",    "key": "\u001b[90m│\u001b[36m \uf120 Shell  \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
+    { "type": "terminal", "key": "\u001b[90m│\u001b[36m \uf108 Term   \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
     {
-      "type": "separator",
-      "string": "─",
-      "outputColor": "bright_black"
+      "type": "custom",
+      "key": "└{$2}┘",
+      "keyColor": "bright_black",
+      "format": ""
     },
-    "break",
-    { "type": "os",       "key": "\uf17c OS     \u001b[32m➜\u001b[0m " },
-    { "type": "kernel",   "key": "\uf013 Kernel \u001b[32m➜\u001b[0m " },
-    { "type": "uptime",   "key": "\uf017 Uptime \u001b[32m➜\u001b[0m " },
-    { "type": "shell",    "key": "\uf120 Shell  \u001b[32m➜\u001b[0m " },
-    { "type": "terminal", "key": "\uf108 Term   \u001b[32m➜\u001b[0m " },
     "break",
     {
-      "type": "separator",
-      "string": "─",
-      "outputColor": "bright_black"
+      "type": "custom",
+      "key": "┌─ \u001b[36mHardware\u001b[90m {$1}┐",
+      "keyColor": "bright_black",
+      "format": ""
     },
-    "break",
-    { "type": "cpu",    "key": "\uf2db CPU    \u001b[32m➜\u001b[0m " },
-    { "type": "gpu",    "key": "\uf26c GPU    \u001b[32m➜\u001b[0m ", "format": "{2}" },
-    { "type": "memory", "key": "\uf233 Memory \u001b[32m➜\u001b[0m " },
-    { "type": "disk",   "key": "\uf0a0 Disk   \u001b[32m➜\u001b[0m " }
+    { "type": "cpu",    "key": "\u001b[90m│\u001b[36m \uf2db CPU    \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
+    { "type": "gpu",    "key": "\u001b[90m│\u001b[36m \uf26c GPU    \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}", "format": "{2}" },
+    { "type": "memory", "key": "\u001b[90m│\u001b[36m \uf233 Memory \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
+    { "type": "disk",   "key": "\u001b[90m│\u001b[36m \uf0a0 Disk   \u001b[32m➜\u001b[36m {$3}\u001b[90m│\u001b[0m{$4}" },
+    {
+      "type": "custom",
+      "key": "└{$2}┘",
+      "keyColor": "bright_black",
+      "format": ""
+    }
   ],
   "display": {
     "separator": "",
     "color": {
       "keys": "cyan",
       "title": "red"
-    }
+    },
+    "constants": [
+      "─────────────────────────────────────────",
+      "────────────────────────────────────────────────────",
+      "\u001b[40C",
+      "\u001b[40D"
+    ]
   }
 }
 
