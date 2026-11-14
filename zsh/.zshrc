@@ -27,9 +27,7 @@ alias gut="git"
 
 #functions
 fastfetch() {
-	    {
-		mpg123 /root/Music/fastfetch-audio.mp3 >/dev/null 2>&1 </dev/null &
-		disown
-	} 2>/dev/null
-	command fastfetch "$@"
+      ( mpg123 /root/Music/fastfetch-audio.mp3 >/dev/null 2>&1 </dev/null & )
+      echo ""
+      command fastfetch "$@"
 }
