@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p ~/.config/starship ~/.config/fastfetch ~/Music ~/Images
+mkdir -p ~/.config/fastfetch ~/Music ~/Images
 ln -s -v -f ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s -v -f ~/dotfiles/starship/starship.toml ~/.config/starship.toml
 ln -s -v -f ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
